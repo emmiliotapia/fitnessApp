@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./img/pesas-ejercicio-mancuernas-hierro-placas-extra.jpg);
+    background-size: cover;
+    background-color: #121212 ;
+}
+
+.container-form {
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px rgba(0, 0, 0, .1); 
+    transition: all 1s ease;
+    max-width: 900px;
+    margin: 10px;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #434946;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-child {
+    width: 100%;
+    padding: 0 30px;
+
+}
+
+.info-child h2 {
+    font-size: 2.5rem;
+    color: azure;
+}
+
+.info-child p {
+    margin: 15px;
+    color: azure;
+
+}
+
+.info-child button[type="submit"] {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: azure;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+
+.info-child button[type="submit"]:hover {
+    background-color: #cbcfcd;
+    border: none;
+    color: azure;
+    box-shadow: 0, 2px, 5px rgba(0, 0, 0, .1); 
+
+}
+
+.form-information {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #353839;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-child {
+    padding: 0 30px;    
+}
+
+.form-information-child h2 {
+    color: #7DDFEE;
+    font-size: 2rem;
+}
+
+.form-information-child p {
+    color: whitesmoke;
+}
+
+
+
+.icons {
+    margin: 15px 0;
+}
+
+.icons i {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    transition: background-color 0.3s ease;
+    border: solid thin whitesmoke;
+    box-shadow: 0 2px 5px rgba(199, 191, 191, 0.384); 
+}
+
+.icons i:hover {
+    background-color: #cbcfcd;
+    color: #9191bd;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(187, 180, 180, 0.514); 
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.form label i {
+    color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+}   
+
+.form input[type="submit"]:hover {
+    background-color: #7a7a9a;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+button#sign-up {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: azure;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+button#sign-up:hover {
+background-color: #cbcfcd;
+border: none;
+color: azure;
+box-shadow: 0, 2px, 5px rgba(0, 0, 0, .1); 
+}
+
+/*RESPONSIVE FORM*/
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    }
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
